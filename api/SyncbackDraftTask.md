@@ -1,9 +1,11 @@
 # 保存草稿
 ## native端业务逻辑猜想
+- 把接收到数据保存到Message, MessageBody中
 - 把接收到的数据保存到sqlite的Task表中，status为local，同时返回给客户端JSON-1和JSON-2
-- 开始与邮件服务器同步，成功后status变为remote
+- 开始与邮件服务器同步，成功后Task表中的status变为remote
 - 返回JSON-3
-- Task表中，status变为complete
+- 这里还有别的处理么？？？
+- Task表中的status变为complete
 
 ## Post Data
 ```json
@@ -58,12 +60,12 @@
 				"contentId": null, // null or （客户端生成）规则： `mcid-${s4()}${s4()}-${s4()}`
 				"__cls": "File"
 			}],
-			"unread": false,
+			"unread": false, // 是否未读
 			"events": [],
-			"starred": false,
+			"starred": false, // 是否有星标
 			"hMsgId": "1536029080.local-88c66397-74e7-v1.4.2-COMMIT_INSERTED_DURING_PACKAGING@getmailspring.com", // 同headerMessageId
 			"subject": "", // 标题
-			"draft": true, // 是否为草稿 flag
+			"draft": true, // 是否为草稿
 			"pristine": true, // By default, new drafts are considered `pristine`. If the user leaves the composer without making any changes, the draft is discarded. If your extension populates the draft in a way that makes it "populated" in a valuable way, you should set `draft.pristine = false` so the draft saves, even if no further changes are made.
 			"v": 0,
 			"__cls": "Message",
@@ -89,7 +91,7 @@
 		"body": "<br/><br/><signature id=\"initial\"><div><div>Sent from <a href=\"https://getmailspring.com/\">Mailspring</a>, the best free email app for work</div></div></signature>",
 		"cc": [],
 		"date": 1536029080,
-		"draft": true,
+		"draft": true, // 是否为草稿
 		"events": [],
 		"file_ids": ["local-8afaab0a-8d46"], // 附件id
 		"files": [{ // 附件

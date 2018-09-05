@@ -1,9 +1,9 @@
 # 保存草稿
 ## native端业务逻辑猜想
-- 1. 把接收到的数据保存到sqlite的Task表中，status为local，同时返回给客户端JSON-1和JSON-2
-- 2. 开始与邮件服务器同步，成功后status变为remote
-- 3. 返回JSON-3
-- 4. Task表中，status变为complete
+- 把接收到的数据保存到sqlite的Task表中，status为local，同时返回给客户端JSON-1和JSON-2
+- 开始与邮件服务器同步，成功后status变为remote
+- 返回JSON-3
+- Task表中，status变为complete
 
 ## Post Data
 ```json
@@ -110,7 +110,7 @@
 			"role": "drafts", // 首字母小写的文件夹路径
 			"v": 535 // 版本号, 每次调用+1
 		},
-		"from": [{ // 发件人
+		"from": [{ // 发件人
 			"__cls": "Contact",
 			"aid": "9b3a80a0", // account_id 
 			"email": "quanzhansheng@msn.com",

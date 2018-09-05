@@ -17,6 +17,24 @@
 		"draft": { // 草稿信息
 			"aid": "9b3a80a0",
 			"metadata": [],
+			// 这里有两个已知的可能值: link-tracking和open-tracking，
+			// 例如: 
+			// [{
+			// 	"__cls": "PluginMetadata",
+			// 	"pluginId": "link-tracking",
+			// 	"v": 1,
+			// 	"value": {
+			// 		"tracked": true
+			// 	}
+			// }, {
+			// 	"__cls": "PluginMetadata",
+			// 	"pluginId": "open-tracking",
+			// 	"v": 1,
+			// 	"value": {
+			// 		"open_count": 0,
+			// 		"open_data": []
+			// 	}
+			// }]
 			"to": [],
 			"cc": [],
 			"bcc": [],
@@ -122,7 +140,7 @@
 		"hMsgId": "1536029080.local-88c66397-74e7-v1.4.2-COMMIT_INSERTED_DURING_PACKAGING@getmailspring.com", // (客户端生成)同headerMessageId
 		"id": "RZXwX2z22CWc1ckCekCV7pQQ3bMwCk6sX9BeQS3bJ", // 邮件id
 		"labels": [], // 标签 gmail有标签, hotmail没有
-		"metadata": [],
+		"metadata": [], // 这里有两个已知的可能值: link-tracking和open-tracking
 		"object": "draft",
 		"pristine": true, // 意义同postdata中的pristine
 		"remoteFolder": { // 同上面的folder信息
@@ -146,13 +164,13 @@
 			"role": "drafts",
 			"v": 535
 		},
-		"remoteUID": 0,
+		"remoteUID": 0, // （未使用）意义不明
 		"replyTo": [],
-		"starred": false,
-		"subject": "",
+		"starred": false, // 是否有星标
+		"subject": "", // 邮件标题
 		"threadId": "",
 		"to": [],
-		"unread": false,
+		"unread": false, // 是否未读
 		"v": 1
 	}],
 	"type": "persist"

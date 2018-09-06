@@ -1,4 +1,7 @@
 # 保存草稿
+## 页面操作方法：
+- 新建草稿 or 编辑草稿
+
 ## native端业务逻辑猜想
 - 把接收到数据保存到Message, MessageBody中
 - 把接收到的数据保存到sqlite的Task表中，status为local，同时返回给客户端JSON-1和JSON-2

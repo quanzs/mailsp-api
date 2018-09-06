@@ -3,10 +3,9 @@
 ## 草稿相关
 | 完成状态 | 文档名 | 备注 | 
 | :-: | -| - | 
-| ☑️ | SyncbackDraftTask.md | 同步草稿 |
+| ☑️ | SyncbackDraftTask.md | 同步草稿 |
 | ️️☑️ | DestroyDraftTask.md | 删除草稿 |
-|  | NewMessage.md | 新建邮件 |
-|  | SendDraftTask.forSending.md | 发送草稿 |
+| ️️☑️ | SendDraftTask.forSending.md | 发送邮件 |
 |  | WakeWorkers.md | 同步邮件 |
 |  | NeedBodies.md | 取得邮件正文 |
 |  | SyncbackCategoryTask.forCreating.md | 同步Category-新建 |

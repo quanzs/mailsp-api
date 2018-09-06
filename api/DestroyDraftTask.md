@@ -1,4 +1,8 @@
 # 删除草稿
+## 页面操作方法：
+- 选中草稿
+- 点击删除
+
 ## native端业务逻辑猜想
 - 更新sqlite的Message表中的该条数据
   - id: deleted-40位随机字符串
@@ -27,8 +31,8 @@
 	"modelClass": "Message",
 	"modelJSONs": [{
 		"__cls": "Message",
-		"_sa": 0,
-		"_suc": 0,
+		"_sa": 0, // （猜测）邮件送达时间，未送到为0，送达为unix时间戳
+		"_suc": 0, // 是否成功发出 0:未发出，1:已发出
 		"aid": "9b3a80a0", // account_id
 		"bcc": [],
 		"body": "<div>1234</div><br/><div><signature id=\"initial\"><table cellpadding=\"0\" cellspacing=\"0\"><tbody><tr><td style=\"vertical-align:top;width:1px\"></td><td><div>这是一个签名测试</div></td></tr><tr><td colspan=\"2\"><div style=\"font-size:0.9em;border-top:1px dashed gray;min-width:250px;max-width:400px;margin-top:10px;padding-top:4px\"><div><a style=\"margin-right:8px\" href=\"mailto:test@abc.com\">test@abc.com</a></div><div></div><div><a href=\"https://maps.google.com/?q=åäº¬åé¾è§ä¸å¤§è¡3\">北京回龙观东大街3</a></div></div></td></tr></tbody></table></signature></div>",

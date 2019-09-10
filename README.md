@@ -20,7 +20,7 @@
 |  | openThreadFromWeb.md | 从网页打开Thread |
 |  | Mailfiles.md | mailfiles(具体业务需要调查) |
 |  | ChangeRoleMappingTask.md | 改变role映射关系 |
-|  | EventRSVPTask.md | EventRSVPTask(具体业务需要调查) |
+|  | EventRSVPTask.md | 回复邀请('yes', 'maybe', 'no') |
 |  | GetMessageRFC2822Task.md | GetMessageRFC2822Task(具体业务需要调查) |
 |  | SyncbackMetadataTask.forSaving.md | 同步metadata信息 |
 |  | ExpungeAllInFolderTask.md | 清空文件夹(猜测) |
